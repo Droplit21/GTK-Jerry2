@@ -34,5 +34,15 @@
 <img src="file:///C:/Users/Lonnp/OneDrive/Pictures/me.png" alt="Lonnie Picture" width="426" height="312"> </p>
 </body>
 
+$('.Lonnie Preston Phillips').collapse();
+
+$('.Lonnie Preston Phillips').on('show hide', function(e){
+    var $sib = $(e.target).siblings('.Lonnie Preston Phillips-heading');
+    $sib.css('color','red').find('.Lonnie Preston Phillips-toggle i').toggleClass('icon-arrow-down icon-arrow-up', 200);
+    $sib.find('a.Lonnie Preston Phillips-toggle').css('color',function(){
+        return $(e.target).hasClass('in') ? 'red':'#08C';
+    });
+});
+	
 </html>
 
